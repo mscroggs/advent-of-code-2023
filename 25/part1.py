@@ -64,8 +64,6 @@ while len(remaining_nodes) > 0:
         remaining_nodes.remove(a)
     groups.append(g)
 
-print(2**len(groups))
-
 for halves in product([False, True], repeat=len(groups)):
     if True not in halves or False not in halves:
         continue
